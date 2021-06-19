@@ -8,3 +8,12 @@ lm(mpg~vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD, data = 
 # find the p-value and r-squared
 summary(lm(mpg~vehicle_length+vehicle_weight+spoiler_angle+ground_clearance+AWD, data = mechacar_mpg_df))
 
+# Suspension Coil Lot Analysis
+# read csv to dataframe
+suspension_coil_df <- read.csv(file = './resources/Suspension_Coil.csv', check.names = F, stringsAsFactors = F)
+head(suspension_coil_df)
+# create a summary dataframe
+total_summary <- suspension_coil_df %>% summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI))
+# create summaries for each lot
+lot_summary <- suspension_coil_df %>% group_by(Manufacturing_Lot) %>% summarize(Mean = mean(PSI), Median = median(PSI), Variance = var(PSI), SD = sd(PSI), .groups = 'keep')
+
