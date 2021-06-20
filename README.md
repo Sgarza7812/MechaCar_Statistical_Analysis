@@ -43,13 +43,23 @@ Lot 3 T-Test Summary
  
 •	The T-test for Lot 3 shows that they are slightly statistically different from the population mean, and the p-value is just low enough (0.0417) for us to reject the null hypothesis.
 ## Study Design: MechaCar vs Competition
+
 There are many factors to take into consideration when evaluating a car to purchase. In a world where ridesharing is becoming more popular, easier and cheaper to get around in other people's vehicles, customers will be looking to buy a car that is bigger and more comfortable.
+
 Metric to test
+
 •	To narrow down our test, we should evaluate MechaCar's carrying capacity, in cubic inches, in comparison to various competitors' vehicles.
+
 Null and Alternate Hypothesis
+
 •	H0: MechaCar prototypes' average carrying capacity is similar to competitor's vehicles in the same vehicle class
+
 •	Ha: MechaCar prototypes' average carrying capacity is statistically above or below that of competitor vehicles.
+
 Statistical Test Used
+
 •	The best statistical test for this would be two-sample t-tests.
+
 What data is needed
+
 •	We would need to gather cubic space data from the carrying compartments of all MechaCar prototypes, as well as from all major competitor vehicles.
